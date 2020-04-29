@@ -1,0 +1,36 @@
+@import "reset.css";
+
+header.top-site {
+    width: 100%;
+    min-height: 80px;
+    position: relative;
+    background-color:var(--header);
+}
+
+
+
+footer.footer-site {
+    background-color: #343433;
+}
+
+/* breakpoint */
+/*tablet ou celular landscape*/
+@media (min-width: 576px) {
+
+}
+
+/* desktop */
+@media (min-width: 768px) {
+    
+}
+
+/* large desktop*/
+@media (min-width: 992px) {
+    
+}
+
+/* extra large */
+@media (min width: 1200px) {
+    
+}
+
