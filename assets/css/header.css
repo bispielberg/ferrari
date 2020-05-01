@@ -1,0 +1,39 @@
+/* Aqui inicia o header */
+
+#header {
+    min-width: 320px;
+    width: 100%;
+    min-height: 80px;
+    position: relative;
+    background-color: var(--header);
+}
+
+#header button {
+    position: absolute;
+    right: 0;
+    background: none;
+    border: none;
+    padding: 13px;
+    outline: none;
+}
+
+#header #logo {
+    margin-top: 15px;
+    width: 120px;
+    position: absolute;
+    left: calc(50vw - 60px);
+    z-index: 2;
+}
+
+#header hr {
+    background-image: url('../images/bg-italy.svg');
+    background-repeat: repeat-x;
+    width: 100%;
+    margin: 0;
+    height: 20px;
+    border: none;
+    position: absolute;
+    bottom:0;
+    z-index: 1;
+}
+/* Aqui termina o header */

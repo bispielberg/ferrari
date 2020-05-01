@@ -1,0 +1,115 @@
+#home {
+    flex-direction: column;
+    margin-top: -80px;
+
+}
+
+
+#home header {
+    width: 100%;
+    min-width: 320px;
+    height: 100vh;
+    max-height: 800px;
+    background-image: url('/assets/images/index/ferrari-sf90.jpg');
+    background-position-x: 80%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 2em;
+}
+
+
+#home header h1 {
+    color: #fff;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: right;
+    margin: .4em 0;
+    line-height: 1.25em;
+}
+
+#home .gallery {
+    flex-direction: column;
+}
+
+#home .gallery figure {
+    width: 100%;
+    margin: 0;
+    margin-top: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+#home .gallery figure figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    background-color: var(--black75);
+    color: var(--white);
+    padding: .3em 1em;
+    transition-duration: 1s;
+}
+
+#home .gallery figure figcaption h2 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#home .gallery figure figcaption p {
+    margin: 0;
+    font-size: 12px;
+    color: #ccc;
+}
+
+#home head a {
+    border: #fff 2px solid;
+    border-radius: 8px;
+    padding: 10px 32px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#home .inspiration {
+    position: relative;
+    padding: 3em 2em;
+    justify-items: flex-end;
+    min-height: 600px;
+}
+
+#home .inspiration .text {
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    z-index: 2;
+}
+
+#home .inspiration .text h2 {
+    font-size: 40px;
+    color: #333;
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+
+#home .inspiration .text p {
+    color: #555;
+    text-align: right;
+    max-width: 75vw;
+    font-size: 24px;
+}
+
+#home .inspiration .car {
+    position: absolute;
+    background: url('/assets/images/index/ferrari.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 684px;
+    height: 427px;
+    z-index: 0;
+    top: 210px;
+    left: -330px;
+
+}

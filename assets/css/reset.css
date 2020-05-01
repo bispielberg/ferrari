@@ -7,17 +7,22 @@
     --dark: #343433;
     --light: #F8F8F8;
     --header: #E5E3DF75;
+    --white50: #ffffff80;
+    --black75: rgba(0,0,0, 0.75); 
 }
-
 
 * {
     box-sizing: border-box;
 }
 
-body, div, article, aside, footer, header, main, nav, section, ul, ol{
+body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure{
     display: flex;
 }
 
 body {
     margin: 0;
+    flex-direction: column;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
 }
