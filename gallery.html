@@ -4,25 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HcodeLab - Ferrari</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
-    <header class="top-site">
+    <header id="header">
+        <div id="overlay" data-close="menu"></div>
         <img src="assets/images/ferrari-logo.svg" id="logo" alt="Logo" />
-        <button type="button">
+        <button type="button" id="btn-open">
             <img src="assets/images/mnu-black-iphone.svg" alt="menu">
             
         </button>
-        <hr />
+
+        <nav class="menu">
+            <div>
+                <button type="button" id="btn-close" data-close="menu">
+                    <img src="/assets/images/close-black-18dp.svg" alt="close" />
+                </button>
+
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/our-history.html">Nossa História</a></li>
+                    <li><a href="/gallery.html">Galeria</a></li>
+                    <li><a href="/contact.html">Contato</a></li>
+                </ul>
+            </div>
+            <button type="button" class="btn-register">
+                Registre-se / Login
+            </button>        
+        </nav>
+
+
+       
 
     </header>
 
-    <main>
+
+
+
+    
+
+    <main id="gallery" class="page">
+       
+
+        <header >
+            <div class="mask">
+                <h1>Galeria</h1>
+            </div> 
+        </header>
+
+        <hr class="italy" />
+
+        <section class="photos">
+            <picture>
+                <source srcset="/assets/photos/2014_dmc_ferrari_laferrari_fxxr_3-1920x1080@2x" media="min-width: 750px">
+                    <img src="/assets/images/photos/2014_dmc_ferrari_laferrari_fxxr_3-1920x1080.png" alt="Ferrari" />
+            </picture>
+
+            <picture>
+                <source srcset="/assets/images/photos/2014_ferrari_california_t_6-1920x1080@2x.png" media="min-width: 750px">
+                    <img src="/assets/images/photos/2014_ferrari_california_t_6-1920x1080.png" alt="Ferrari" />
+            </picture>
+
+            <picture>
+                <source srcset="/assets/images/photos/2016_ferrari_488_spider_2-1920x1080@2x.png" media="min-width: 750px">
+                    <img src="/assets/images/photos/2016_ferrari_488_spider_2-1920x1080.png" alt="Ferrari" />
+            </picture>
+
+            <picture>
+                <source srcset="/assets/images/photos/ferrari_formula_1_2015-1920x1080@2x.png" media="min-width: 750px">
+                    <img src="/assets/images/photos/ferrari_formula_1_2015-1920x1080.png" alt="Ferrari" />
+            </picture>
+
+            <picture>
+                <source srcset="/assets/images/photos/ferrari_fxx_k-1920x1080@2x.png" media="min-width: 750px">
+                    <img src="/assets/images/photos/ferrari_fxx_k-1920x1080.png" alt="Ferrari" />
+            </picture>
+
+            <picture>
+                <source srcset="/assets/images/photos/ferrari_hd_widescreen-1920x1200@2x.png" media="min-width: 750px">
+                    <img src="/assets/images/photos/ferrari_hd_widescreen-1920x1200.png" alt="Ferrari" />
+            </picture>
+
+
+
+        </section>
+
+
+
+        
+
+
 
 
     </main>
 
-    <footer>
+
+
+    <footer id="footer">
         <button type="button">
             <img src="assets/images/icon-arrow-up.svg" alt="up" />
         </button>
@@ -51,6 +129,8 @@
         </p>
 
     </footer>
+
+    <script type="text/javascript" src="./javascript/index.js"></script>
     
 </body>
 </html>

@@ -3,14 +3,12 @@
 #header {
     min-width: 320px;
     width: 100%;
-    min-height: 80px;
+    min-height: 60px;
     position: relative;
     background-color: var(--header);
 }
 
 #header button {
-    position: absolute;
-    right: 0;
     background: none;
     border: none;
     padding: 13px;
@@ -18,11 +16,12 @@
 }
 
 #header #logo {
-    margin-top: 15px;
     width: 120px;
     position: absolute;
-    left: calc(50vw - 60px);
-    z-index: 2;
+    transition: all 1s ease-in-out;
+    right: calc(50vw - 60px);
+    top: 15px;
+    z-index: 5;
 }
 
 #header hr {
@@ -36,4 +35,81 @@
     bottom:0;
     z-index: 1;
 }
+
+#header .menu {
+    transition: right 0.5s ease-in-out;
+    width: 300px;
+    height: 100vh;
+    background-color: var(--white);
+    position: fixed;
+    right: -300px;
+    top: 0;
+    z-index: 4;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#header .menu .btn-register {
+    background-color: var(--green);
+    color: var(--white);
+    margin: 1em;
+    border-radius: 6px;
+    justify-content: center;
+    font-size: 1.1em;
+}
+
+#header .menu ul {
+    margin: 208px 0 0 0;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+}
+
+#header .menu ul li {
+    padding: 14px 0;
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+}
+
+#header .menu ul li a {
+    text-decoration: none;
+    color: var(--black75);
+}
+
+#btn-open, #btn-close {
+    position: absolute;
+    right: 0;
+}
+
+.open-menu {
+    overflow: hidden;
+}
+
+#overlay {
+    transition: all 0.5s ease-in-out;
+    display: none;
+}
+
+.open-menu #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black75);
+    z-index: 4;
+    display: flex;
+}
+
+.open-menu #header .menu {
+    right: 0;
+}
+
+.open-menu #header #logo {
+    left: initial;
+    right: 87px;
+}
+
+
 /* Aqui termina o header */

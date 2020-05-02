@@ -1,7 +1,13 @@
+@import 'variables.css';
 @import 'reset.css';
 @import 'open-sans.css';
 @import 'header.css';
 @import 'footer.css';
+@import 'our-history.css';
+@import 'gallery.css';
+@import 'contact.css';
+@import 'login.css';
+@import 'register.css';
 @import 'home.css';
 
 
@@ -9,9 +15,6 @@
 main {
     min-height: calc(100vh - 463px);
 }
-
-
-
 
 
 /* breakpoint */

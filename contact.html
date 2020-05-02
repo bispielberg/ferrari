@@ -4,25 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HcodeLab - Ferrari</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
-    <header class="top-site">
+    <header id="header">
+        <div id="overlay" data-close="menu"></div>
         <img src="assets/images/ferrari-logo.svg" id="logo" alt="Logo" />
-        <button type="button">
+        <button type="button" id="btn-open">
             <img src="assets/images/mnu-black-iphone.svg" alt="menu">
             
         </button>
-        <hr />
+
+        <nav class="menu">
+            <div>
+                <button type="button" id="btn-close" data-close="menu">
+                    <img src="/assets/images/close-black-18dp.svg" alt="close" />
+                </button>
+
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/our-history.html">Nossa História</a></li>
+                    <li><a href="/gallery.html">Galeria</a></li>
+                    <li><a href="/contact.html">Contato</a></li>
+                </ul>
+            </div>
+            <button type="button" class="btn-register">
+                Registre-se / Login
+            </button>        
+        </nav>
+
+
+       
 
     </header>
 
-    <main>
 
+
+
+    
+
+    <main id="contact" class="page">
+       
+
+        <header >
+            <div class="mask">
+                <h1>Contato</h1>
+            </div> 
+        </header>
+
+        <hr class="italy" />
 
     </main>
 
-    <footer>
+
+
+    <footer id="footer">
         <button type="button">
             <img src="assets/images/icon-arrow-up.svg" alt="up" />
         </button>
@@ -51,6 +87,8 @@
         </p>
 
     </footer>
+
+    <script type="text/javascript" src="./javascript/index.js"></script>
     
 </body>
 </html>

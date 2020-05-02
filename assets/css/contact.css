@@ -1,0 +1,10 @@
+#contact.page header {
+    background-image: url('/assets/images/header-contact.png');
+}
+
+
+@media (min-width: 576px){
+    #contact.page header {
+        background-image: url('/assets/images/header-contact@2x.png');
+    }
+}

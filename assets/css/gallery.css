@@ -1,0 +1,17 @@
+#gallery.page header {
+    background-image: url('/assets/images/header-gallery.png');
+}
+
+#gallery.page .photos {
+    flex-direction: column;
+}
+
+#gallery.page .photos img {
+    width: 100%;
+}
+
+@media (min-width: 576px){
+    #gallery.page header {
+        background-image: url('/assets/images/header-gallery@2x.png');
+    }
+}
