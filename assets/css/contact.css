@@ -1,3 +1,54 @@
+
+#contact.page > section {
+    flex-direction: column;
+}
+
+
+#contact.page #map {
+    background-image: url('/assets/images/map.jpg');
+    height: 263px;
+    width: 100%;
+}
+
+#contact.page .contacts {
+    margin: 30px 0;
+    padding: 1em;
+    flex-direction: column;
+}
+
+#contact.page .contacts li {
+    border: var(--grayC) 1px solid;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    margin-bottom: 4em;
+    text-align: center;
+    color: var(--gray6);
+}
+
+#contact.page .contacts li img {
+    max-width: 100px;
+    background-color: var(--white);
+    margin: 0 auto;
+    margin-top: -60px;
+    padding: 0 15px;
+}
+
+#contact.page .contacts li h3 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#contact.page .contacts li p {
+    font-weight: 300;
+    margin: 0;
+    font-size: 25px;
+}
+
+
+
 #contact.page header {
     background-image: url('/assets/images/header-contact.png');
 }

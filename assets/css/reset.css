@@ -31,6 +31,11 @@ hr.italy {
     flex-direction: column;
 }
 
+.page .page-header {
+    width: 100%;
+    flex-direction: column;
+}
+
 .page header {
     height: 210px;
     width: 100%;
@@ -52,6 +57,98 @@ hr.italy {
     margin: 0;
     padding: 0;
 }
+
+.page p {
+    font-weight: 600;
+    color: var(--gray6);
+    text-align: center;
+    margin: 2em 0;
+}
+
+.page section form > div {
+    width: 100%;
+    flex-direction: column;
+}
+
+.page section .image {
+    display: none;
+}
+
+form {
+    flex-direction: column;
+    padding: 1em;
+    width: 100%;
+}
+
+form .fields {
+    flex-direction: column;
+}
+
+form .field {
+    position: relative;
+    border: var(--grayC) 2px solid;
+    border-radius: 5px;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 10px;
+}
+
+form .field input,
+form, field textarea {
+    line-height: 1.5em;
+    padding: 0.25em 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gray5);
+    border: none;
+    outline: none;
+    font-family: 'Open Sans';
+}
+
+form .actions {
+    flex-direction: column;
+    align-content: center;
+}
+
+form .actions a {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    color: var(--gray6);
+}
+
+form button {
+    width: 100%;
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    padding: 0.5em 1em;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    outline: none;
+}
+
+form button:hover {
+    background-color: var(--green-hover);
+}
+
+form button:active {
+    background-color: var(--green-active);
+}
+
+a {
+    color: var(--red);
+}
+
+a:hover {
+    color: var(--black);
+}
+
+
 
 @media (min-width: 576px) {
     .page header {

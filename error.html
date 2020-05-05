@@ -32,43 +32,47 @@
                 Registre-se / Login
             </button>        
         </nav>
+
+
+       
+
     </header>
 
-    <main id="login" class="page">
 
-        <header >
-            <div class="mask">
-                <h1>Login</h1>
-            </div> 
-        </header>
+   <main id="error" class="page">
+       <hr class="italy" />
 
-        <hr class="italy" />
+       <div class="columns">
 
-        <section>
-            <div class="image"></div>
-            <form>
-                <div>
-                    <div class="fields">
-                        <div class="field">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email"></div>
-                        <div class="field">
-                            <label for="password">Senha</label>
-                            <input type="password" name="password" id="password"></div>
-                    </div>
-                    <div class="actions">
-                        <button type="submit">Entrar</button>
-                        <a href="#">Esqueci a senha</a>
-                    </div>
-                </div>
-                <p>Você ainda não tem conta,<a href="register.html">clique aqui</a> e cadastre-se.</p>
-            </form>
-        </section>
+           <div class="column">
+               <header>
+                   <h1>
+                       <span class="show-desktop"><b>Uno</b>&nbsp; problema ocorrido!</span>
+                       <span class="hide-desktop">Problema ocorrido no <b>Mobi</b>le</span>
+                    </h1>
+               </header>
 
-    </main>
+           </div>
+
+           <div class="column">
+               <picture>
+                   <source srcset="/assets/images/uno.png" media="(min-width:1200px)" />
+
+                   <source srcset="/assets/images/mobi@2x.png" media="(min-width:480px)"/>
+
+                   <img src="/assets/images/mobi.png" alt="Mobi">
+               </picture>
+
+           </div>
+
+       </div>
 
 
 
+
+   </main>
+
+ 
     <footer id="footer">
         <button type="button">
             <img src="assets/images/icon-arrow-up.svg" alt="up" />

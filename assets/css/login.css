@@ -2,6 +2,21 @@
     background-image: url('/assets/images/header-login.png');
 }
 
+#login.page p {
+    font-weight: 600;
+    color: var(--gray6);
+    text-align: center;
+    margin: 2em 0;
+}
+
+#login.page section form > div {
+    width: 100%;
+    flex-direction: column;
+}
+
+#login.page section .image {
+    display: none;
+}
 
 @media (min-width: 576px){
     #login.page header {
