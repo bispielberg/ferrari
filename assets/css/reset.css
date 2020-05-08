@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure{
@@ -97,7 +98,7 @@ form .field {
 form .field input,
 form, field textarea {
     line-height: 1.5em;
-    padding: 0.25em 0;
+    padding: 0 0.25em;
     font-size: 16px;
     font-weight: 700;
     color: var(--gray5);
@@ -148,10 +149,73 @@ a:hover {
     color: var(--black);
 }
 
+.show-desktop {
+    display: none;
+}
+
+/* Daqui para cima é tudo celular - Mobile First */
+
 
 
 @media (min-width: 576px) {
     .page header {
         height: 45vh;
+        min-height: 300px;
     }
+}
+
+@media (min-width: 992px) {
+    .page .page-header {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .page header .mask {
+        background-color: transparent;
+        align-items: flex-end;
+    }
+
+    .page header .mask li {
+        font-size: 30px;
+    }
+
+    .page header .mask h1 {
+        font-size: 100px;
+        text-shadow: 0 3px 6px var(--black15);
+    }
+
+    form .fields {
+        flex-direction: row;
+    }
+    
+    form .field {
+        margin-right: 1em;
+    }
+
+    form .field .field:last-child {
+        margin-right: 0;
+    }
+
+    form .action a {
+        text-align: right;
+    }
+
+    form .field textarea {
+        min-height: 250px;
+    }
+
+    form button {
+        max-width: 340px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .show-desktop {
+        display: flex;
+    }
+    .hide-desktop {
+        display: none;
+    }
+
 }

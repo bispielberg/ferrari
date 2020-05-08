@@ -26,6 +26,23 @@
     align-items: center;
     top: -35px;
     z-index: 1;
+    cursor: pointer;
+}
+
+#footer button:hover {
+    background-color: var(--white);
+}
+     
+
+
+#footer .columns {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer .links {
+    display: none;
 }
 
 #footer ul {
@@ -69,4 +86,40 @@
     font-weight: bold;
 }
 
-/* Aqui termina o footer */
+/* Aqui termina o footer Mobile First*/
+
+@media (min-width: 1200px) {
+    #footer {
+        padding-bottom: 0;
+    }
+
+    #footer .columns {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #footer .links {
+        display: flex;
+    }
+
+    #footer li {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    #footer .links a {
+        color: var(--white50);
+        text-decoration: none;
+    }
+
+    #footer .links a:hover {
+        color: var(--white);
+
+    }
+
+    #footer p {
+        font-size: 14px;
+
+    }
+}
+

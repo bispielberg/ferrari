@@ -27,13 +27,14 @@
                     <li><a href="/contact.html">Contato</a></li>
                 </ul>
             </div>
-            <button type="button" class="btn-register">
+            <a href="register.html" class="btn-register">
                 Registre-se / Login
-            </button>        
+            </a>        
         </nav> 
     </header>
 
     <main id="contact" class="page">
+        <div class="page-header">
        
 
         <header >
@@ -44,8 +45,12 @@
 
         <hr class="italy" />
 
+    </div>
+
         <section>
             <form>
+                <div class="fields">
+
                 <div class="field">
                     <label for="name">Nome Completo</label>
                     <input type="text" name="name" id="name" placeholder="Digite o nome">
@@ -56,6 +61,8 @@
                     <input type="email" name="email" id="email" placeholder="email@email.com">
                 </div>
 
+                </div>
+
                 <div class="field">
                     <label for="message">Mensagem</label>
                     <textarea class="message" id="message"></textarea>
@@ -64,7 +71,7 @@
             </form>
             <div id="map"></div>
         </section>
-        <hr />
+        <hr class="divider" />
 
         <ul class="contacts">
             <li>
@@ -93,25 +100,25 @@
 
         </ul>
 
-
-
-
-
-
-
-
-
-
-
     </main>
 
-
-
+    
     <footer id="footer">
         <button type="button">
             <img src="assets/images/icon-arrow-up.svg" alt="up" />
         </button>
 
+        <div class="columns">
+            <div>
+            <ul class="links">
+                <li class="title">Links</li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/our-history.html">Nossa História</a></li>
+                <li><a href="/gallery.html">Galeria</a></li>
+                <li><a href="/contact.html">Contato</a></li>
+            </ul>
+
+            
         <ul>
             <li class="title">
                 Contato
@@ -128,9 +135,11 @@
                 <a href="https://www.instagram.com/ferrari/"><img src="assets/images/index/instagram.png" alt="Instagram"></a>
             </li>
         </ul>
+    </div>
+  
 
-        <img src="assets/images/ferrari-footer.svg" alt="Logo" class="logo" />
-
+        <a href="/"><img src="assets/images/ferrari-footer.svg" alt="Logo" class="logo" /></a>
+    </div>
         <p>
             2020 © Hcode. All rights reserved.
         </p>
@@ -138,6 +147,8 @@
     </footer>
 
     <script type="text/javascript" src="./javascript/index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp3FUs14NrHt8HKCRz3KH3YsEwaHV3LIs&callback=initMap"
+    ></script>
     
 </body>
 </html>
