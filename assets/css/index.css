@@ -6,11 +6,10 @@
 @import 'our-history.css';
 @import 'gallery.css';
 @import 'contact.css';
-@import 'login.css';
 @import 'register.css';
+@import 'login.css';
 @import 'home.css';
 @import 'error.css';
-
 
 
 main {
@@ -18,24 +17,22 @@ main {
 }
 
 
+
+/* mobile first */
 /* breakpoint */
-/*tablet ou celular landscape*/
+/* tablet ou celular landscape */
 @media (min-width: 576px) {
 
 }
-
 /* desktop */
 @media (min-width: 768px) {
     
 }
-
-/* large desktop*/
+/* large desktop */
 @media (min-width: 992px) {
     
 }
-
-/* extra large */
+/* extra large desktop */
 @media (min-width: 1200px) {
     
 }
-

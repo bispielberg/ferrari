@@ -1,11 +1,11 @@
-/* Aqui inicia o header */
+/* Aqui começa o Header */
 
 #header {
     min-width: 320px;
     width: 100%;
-    min-height: 60px;
+    height: 60px;
     position: relative;
-    background-color: var(--header);
+    background-color:var(--header);
 }
 
 #header button {
@@ -29,7 +29,7 @@
     background-repeat: repeat-x;
     width: 100%;
     margin: 0;
-    height: 20px;
+    height: 18px;
     border: none;
     position: absolute;
     bottom:0;
@@ -96,17 +96,17 @@
 
 .open-menu #overlay {
     position: fixed;
-    top: 0;
+    top:0;
     left: 0;
     width: 100vw;
     height: 100vh;
     background-color: var(--black75);
     z-index: 4;
-    display: flex;
+    display:flex;
 }
 
 .open-menu #header .menu {
-    right: 0;
+    right: 0px;
 }
 
 .open-menu #header #logo {
@@ -114,8 +114,8 @@
     right: 87px;
 }
 
+/* Aqui termina o Header Mobile */
 
-/* Aqui termina o header mobile */
 
 @media (min-width:1200px) {
     #header {
@@ -152,7 +152,6 @@
         width: 100%;
         flex-direction: row;
         align-items: center;
-
     }
 
     #header .menu ul li {
@@ -172,6 +171,5 @@
         min-width: 276px;
         margin: 1.55em;
     }
-
 
 }

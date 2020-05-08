@@ -1,8 +1,6 @@
-
 #contact.page > section {
     flex-direction: column;
 }
-
 
 #contact.page #map {
     background-image: url('/assets/images/map.jpg');
@@ -48,11 +46,9 @@
 }
 
 
-
 #contact.page header {
     background-image: url('/assets/images/header-contact.png');
 }
-
 
 @media (min-width: 576px){
     #contact.page header {
@@ -60,7 +56,7 @@
     }
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
     #contact.page header {
         background-image: url('/assets/images/header-contact@3x.png');
         background-position: 0px -22vw;
@@ -70,9 +66,9 @@
         flex-direction: row;
     }
 
-    #contact.page  > section form,
-    #contact.page  > section #map {
-        /*distribua a largura automaticamente */
+    #contact.page > section form,
+    #contact.page > section #map {
+        /* Distribua a largura automaticamente */
         flex: 1;
     }
 
@@ -86,12 +82,12 @@
     }
 
     #contact.page .contacts li {
-        /* para deixar os icones desgrudados */
+        /* para deixar os ícones desgrudados */
         margin-right: 1em;
     }
 
     #contact.page .contacts li:last-child {
-        /* no ultimo icone foi demais, retire somente do ultimo*/
+        /* no último ícone, o espaço foi demais, retire somente do último */
         margin-right: 0;
     }
 
@@ -99,14 +95,14 @@
         background-color: var(--grayC);
         height: 1px;
         width: calc(100% - 2em);
-        margin: 1em 0;
+        margin: 3em 0;
         border: none;
         display: flex;
         align-self: center;
     }
 
     #contact.page .contacts li {
-        /* descole do rodape */
+        /* descole do rodapé */
         margin-bottom: 2em;
     }
 }

@@ -4,7 +4,7 @@
 
 #our-history.page .columns {
     flex-direction: column;
-    padding: 16px;
+    padding: 16px;;
 }
 
 #our-history.page .column {
@@ -42,7 +42,7 @@
 }
 
 #our-history.page figure {
-    margin: 0;
+    margin:0;
     flex-direction: column;
 }
 
@@ -82,7 +82,7 @@
 @media (min-width: 992px) {
     #our-history.page .columns {
         flex-direction: row;
-    }
+    } 
 
     #our-history.page .column {
         margin: 4em;
@@ -90,7 +90,7 @@
 
     #our-history.page header {
         background-image: url('/assets/images/header-our-history@3x.png');
-        background-position: 0px --24vw;
+        background-position: 0px -24vw;
     }
 
     #our-history.page .ceo {
@@ -113,18 +113,15 @@
     #our-history.page .ceo > figure {
         position: relative;
     }
-
-    #our-history.page .ceo figcaption {
+    #our-history.page  .ceo figcaption {
         position: absolute;
         top: 0;
         right: -50vw;
     }
-
 }
 
 @media (min-width: 1200px) {
     #our-history.page header {
         background-position: 0px -30vw;
     }
-
 }
