@@ -105,4 +105,14 @@
         /* descole do rodapé */
         margin-bottom: 2em;
     }
+
+    @media (prefers-color-scheme: dark) {
+        #contact.page .contacts li img {
+            background-color: var(--light);
+        }
+
+        #contact.page .contacts li {
+            border: var(--black50) 1px solid;
+            color: var(--black50);
+        }
 }

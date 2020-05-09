@@ -6,6 +6,7 @@
     <title>HcodeLab - Ferrari</title>
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
+
 <body>
     <header id="header">
         <div id="overlay" data-close="menu"></div>
@@ -28,72 +29,99 @@
                     <li><a href="/contact.html">Contato</a></li>
                 </ul>
             </div>
+
             <a href="register.html" class="btn-register">
                 Registre-se / Login
-            </a>       
+            </a>        
         </nav>
-
     </header>
 
-    <main id="register" class="page">
-        <div class="page-header">
-            <header >
-                <div class="mask">
-                    <h1>Cadastro</h1>
-                </div> 
-            </header>
-    
-            <hr class="italy" />
-        </div>
+    <main id="home">
+        <hr class="italy" />
 
-        <section>
-            <div class="image"></div>
+        <header > 
+            <h1>SF90 Stradale</h1>
+            <a href="#">Detalhes</a>
+        </header>
 
-            <form>
-                <div>
+        <section class="gallery">
+            <figure>
+                 <img src="assets/images/index/laferrari.jpg" />
+                 <figcaption>
+                     <h2>La Ferrari</h2>
+                     <p>Ferrari F1000</p>
+                 </figcaption>
+            </figure>
 
-                    <div class="fields">
-                        
+            <figure>
+                <img src="assets/images/index/ferrari-interior.jpg" />
+                <figcaption>
+                    <h2>SF90 Stradale - Interior</h2>
+                    <p>V12 - 3.9L - 720HP</p>
+                </figcaption>
+           </figure>
 
-                    <div class="field">
-                        <label for="name">Nome Completo</label>
-                        <input type="text" name="name" id="name">
-                    </div>
-
-                    <div class="field">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                 </div>
-
-                 <div class="fields">
-                    <div class="field">
-                        <label for="birth">Data de Nascimento</label>
-                        <input type="date" name="birth" id="birth">
-                    </div>
-
-                    <div class="field">
-                        <label for="password">Senha</label>
-                        <input type="password" name="password" id="password">
-                    </div>
-                 </div>
-
-                 <button type="submit">Entrar</button>
-                </div>
-
-                <p>Se você já possui uma conta <a href="login.html">clique aqui</a> para fazer login</p>
-            </form>
+           <figure>
+            <img src="assets/images/index/f8-tributo.jpg" />
+            <figcaption>
+                <h2>F8 Tributo</h2>
+                <p>V8</p>
+            </figcaption>
+       </figure>
         </section>
-       
 
-        
+        <section class="inspiration">
+            <div></div>
+            <div class="text">
+                <h2>Inspirando<span>Gerações</span></h2>
+                <hr />
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus aperiam pariatur.
+                </p>
+                <p class="complete">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, similique? Nostrum alias quae fugiat beatae reiciendis nobis aut, quo maxime a molestiae, inventore quasi asperiores ducimus vitae exercitationem laudantium! Iste!
+                </p>
+
+            </div>
+
+            <div class="car">
+
+            </div>
+        </section>
+
+        <section class="know">
+            <div class="know-1">
+                <h1>Conheça a Máquina</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam illum provident corporis eum qui cum veniam ad temporibus aliquid aliquam.
+                </p>
+            <a href="/gallery.html">Detalhes</a>
+
+            </div>
+            <img src="./assets/images/index/top-view.png" alt="Ferrari Top View" />
+
+            <div class="know-2">
+                <dl>
+                    <dt>Motorização</dt>
+                    <dd>Lorem ipsum dolor sit amet consectetur adipisicing.</dd>
+
+                    <dt>Desempenho</dt>
+                    <dd>Lorem ipsum dolor sit amet consectetur adipisicing.</dd>
+
+                    <dt>Conforto</dt>
+                    <dd>Lorem ipsum dolor sit amet consectetur adipisicing.</dd>
+                </dl>
+                
+            </div>
+
+
+        </section>
 
     </main>
 
 
-
+   
     <footer id="footer">
-        
         <button type="button">
             <img src="assets/images/icon-arrow-up.svg" alt="up" />
         </button>

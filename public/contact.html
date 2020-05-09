@@ -6,7 +6,6 @@
     <title>HcodeLab - Ferrari</title>
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
-
 <body>
     <header id="header">
         <div id="overlay" data-close="menu"></div>
@@ -15,7 +14,6 @@
             <img src="assets/images/mnu-black-iphone.svg" alt="menu">
             
         </button>
-
         <nav class="menu">
             <div>
                 <button type="button" id="btn-close" data-close="menu">
@@ -29,98 +27,83 @@
                     <li><a href="/contact.html">Contato</a></li>
                 </ul>
             </div>
-
             <a href="register.html" class="btn-register">
                 Registre-se / Login
             </a>        
-        </nav>
+        </nav> 
     </header>
 
-    <main id="home">
-        <hr class="italy" />
+    <main id="contact" class="page">
+        <div class="page-header">
+       
 
-        <header > 
-            <h1>SF90 Stradale</h1>
-            <a href="#">Detalhes</a>
+        <header >
+                <h1><span class="show-desktop">Fale Conosco</span>
+                <span class="hide-desktop">Contato</span></h1>
+            </div> 
         </header>
 
-        <section class="gallery">
-            <figure>
-                 <img src="assets/images/index/laferrari.jpg" />
-                 <figcaption>
-                     <h2>La Ferrari</h2>
-                     <p>Ferrari F1000</p>
-                 </figcaption>
-            </figure>
+        <hr class="italy" />
 
-            <figure>
-                <img src="assets/images/index/ferrari-interior.jpg" />
-                <figcaption>
-                    <h2>SF90 Stradale - Interior</h2>
-                    <p>V12 - 3.9L - 720HP</p>
-                </figcaption>
-           </figure>
+    </div>
 
-           <figure>
-            <img src="assets/images/index/f8-tributo.jpg" />
-            <figcaption>
-                <h2>F8 Tributo</h2>
-                <p>V8</p>
-            </figcaption>
-       </figure>
+        <section>
+
+            <form>
+                <div class="fields">
+
+                <div class="field">
+                    <input type="text" name="name" id="name" placeholder="Digite o nome" >
+                    <label for="name">Nome Completo</label>
+                </div>
+
+                <div class="field">
+                    <input type="email" name="email" id="email" placeholder="email@email.com">
+                    <label for="email">E-mail</label>
+                </div>
+
+                </div>
+
+                <div class="field">
+                    <textarea class="message" id="message"></textarea>
+                    <label for="message">Mensagem</label>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="map"></div>
         </section>
+        <hr class="divider" />
 
-        <section class="inspiration">
-            <div></div>
-            <div class="text">
-                <h2>Inspirando<span>Gerações</span></h2>
-                <hr />
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus aperiam pariatur.
-                </p>
-                <p class="complete">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, similique? Nostrum alias quae fugiat beatae reiciendis nobis aut, quo maxime a molestiae, inventore quasi asperiores ducimus vitae exercitationem laudantium! Iste!
-                </p>
+        <ul class="contacts">
+            <li>
+                <img src="/assets/images/google-place.svg" alt="Icon">
+                <h3>OUR HEADWUARTERS</h3>
+                <p>Modena, Italia</p>
+            </li>
 
-            </div>
+            <li>
+                <img src="/assets/images/phone.svg" alt="Icon">
+                <h3>SPEAK TO US</h3>
+                <p>(+39) 800 771 811</p>
+            </li>
 
-            <div class="car">
+            <li>
+                <img src="/assets/images/skype.svg" alt="Icon">
+                <h3>MAKE A VIDEO CALL</h3>
+                <p>FerrariOnSkype</p>
+            </li>
 
-            </div>
-        </section>
+            <li>
+                <img src="/assets/images/twitter (1).svg" alt="Icon">
+                <h3>FOLLOW ON TWITER</h3>
+                <p>2.3M Followers</p>
+            </li>
 
-        <section class="know">
-            <div class="know-1">
-                <h1>Conheça a Máquina</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam illum provident corporis eum qui cum veniam ad temporibus aliquid aliquam.
-                </p>
-            <a href="/gallery.html">Detalhes</a>
-
-            </div>
-            <img src="./assets/images/index/top-view.jpg" alt="Ferrari Top View" />
-
-            <div class="know-2">
-                <dl>
-                    <dt>Motorização</dt>
-                    <dd>Lorem ipsum dolor sit amet consectetur adipisicing.</dd>
-
-                    <dt>Desempenho</dt>
-                    <dd>Lorem ipsum dolor sit amet consectetur adipisicing.</dd>
-
-                    <dt>Conforto</dt>
-                    <dd>Lorem ipsum dolor sit amet consectetur adipisicing.</dd>
-                </dl>
-                
-            </div>
-
-
-        </section>
+        </ul>
 
     </main>
 
-
-   
+    
     <footer id="footer">
         <button type="button">
             <img src="assets/images/icon-arrow-up.svg" alt="up" />
@@ -165,6 +148,8 @@
     </footer>
 
     <script type="text/javascript" src="./javascript/index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp3FUs14NrHt8HKCRz3KH3YsEwaHV3LIs&callback=initMap"
+    ></script>
     
 </body>
 </html>
